@@ -12,6 +12,7 @@ using namespace std;
 
 
 //
+// CAMBIO PARA LA SEGUNDA SUBIDA
 
 Complex::Complex( float vreal, float vimg){
 	real=vreal;
