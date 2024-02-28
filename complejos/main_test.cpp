@@ -8,7 +8,7 @@
 
 // ESTE FICHERO SIEMPRE ES IGUAL. ES COPY PASTE.
 
-//#ifdef TEST
+#ifdef TEST
 #include <gtest/gtest.h>
 
 int main(int narg, char **arg) {
@@ -16,6 +16,7 @@ int main(int narg, char **arg) {
 	return RUN_ALL_TESTS();
 }
 
-//#endif
+#endif
+
 
 

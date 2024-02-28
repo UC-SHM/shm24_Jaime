@@ -20,14 +20,16 @@ public:					// importante
 	void set(float vreal, float vimg);		// set paso valor como parámetro
 	void get(float &vreal, float &vimg);		// en el get
 
-	Complex operator+( const Complex &rhs);		// suma
-	Complex operator*( const Complex &rhs);		// multiplicacion
-	Complex &operator=( const Complex &rhs);		// igualdad
-	Complex( float vreal, float vimg);
+	Complex operator+(const Complex &rhs);		// suma
+	Complex operator*(const Complex &rhs);		// multiplicacion
+	Complex &operator=(const Complex &rhs);		// igualdad
+
 	Complex();
+	Complex(float vreal, float vimg);
+	//Complex();
 
 	virtual ~Complex();
-	};
+};
 
 
 

@@ -8,11 +8,18 @@
 #include "Complex.h"
 #include <iostream>				// libreria de entreada y salida parar c++
 #include <cmath>
+#include <stdio.h>
+
 using namespace std;
 
 
 //
 // CAMBIO PARA LA SEGUNDA SUBIDA
+Complex::Complex(){
+	real = 0;
+	img = 0;
+}
+
 
 Complex::Complex( float vreal, float vimg){
 	real=vreal;
@@ -22,10 +29,28 @@ Complex::Complex( float vreal, float vimg){
 //}
 
 Complex::~Complex(){					// destructor
-
+	std::cout << "Destruyendo objeto complex" << std::endl;		//////////////////////////////////////
 }
 
 
+
+float Complex::mod(){
+	double mod;
+	mod= (double)(real*real) + (double)(img*img);
+	return ((float) sqrt(mod));
+}
+
+
+void Complex::set(float vreal, float vimg) {
+	real=vreal;
+	img=vimg;
+}
+
+
+void Complex::get(float &vreal, float &vimg){
+	vreal=real;
+	vimg=img;
+}
 
 
 
@@ -52,25 +77,6 @@ Complex &Complex::operator=(const Complex &rhs){
 	real=rhs.img;
 
 	return *this;
-}
-
-
-
-float Complex::mod(){
-	double mod;
-	mod= (double)(real*real) + (double)(img*img);
-	return ((float) sqrt(mod));
-}
-
-
-void Complex::set(float vreal, float vimg) {
-	real=vreal;
-	img=vimg;
-}
-
-void Complex::get(float &vreal, float &vimg){
-	vreal=real;
-	vimg=img;
 }
 
 
