@@ -26,21 +26,15 @@ int main(){
 
 	// ahora se le da valor al complejo. Se hacen sus 2 copias y se llama a la función get. lña función get va a memoria y la saca el valor.
 	num.set(3.0,7.0);		// los inputs de la función "set" son float. ¿poner un ".0"?
-	//num.get();
-	//std::cout << "numero complejo dado = " << num.get();
+	float real;
+	float img;
 
 
-	/* ??
-	std::cout << "parte real = " << num.real();					// la va "real" y "img" son privadas. No debería dejar hacer esto, ¿no?
-	std::cout << "  parte imaginaria = " << num.img();				// no deja poner "<< std::endl;" para hacer el salto de linea.
-	std::cout << "\n";
-	 */
-
+	num.get(real,img);
+	std::cout << "parte real = " << real << std::endl;					// la va "real" y "img" son privadas. No debería dejar hacer esto, ¿no?
+	std::cout << "  parte imaginaria = " << img << std::endl;				// no deja poner "<< std::endl;" para hacer el salto de linea.
 
 	std::cout << "main cierra " << std::endl;
-
-
-
 	return 0;
 }
 
